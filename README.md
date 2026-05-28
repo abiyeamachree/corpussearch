@@ -1,4 +1,4 @@
-# corpussearch — Assignment 1: Retrieval, Honest Comparison
+# corpussearch: Retrieval, Honest Comparison
 
 Public repo: *https://github.com/abiyeamachree/corpussearch*
 

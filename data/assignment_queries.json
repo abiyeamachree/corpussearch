@@ -1,0 +1,150 @@
+{
+  "description": "20 hand-written evaluation queries for Assignment 1. Each query lists document IDs that should appear in top-5 results. Five queries are marked hard (paraphrase, negation, ambiguity, rare terms, or conflicting phrasing).",
+  "queries": [
+    {
+      "id": "q01",
+      "text": "Does the 1000 Genomes Project help map rare genetic variants with stronger effects than common SNPs?",
+      "relevant_doc_ids": ["14717500"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q02",
+      "text": "Is abnormal prion protein positivity found in about one in two thousand people in the United Kingdom?",
+      "relevant_doc_ids": ["13734012"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q03",
+      "text": "What evidence links low birth weight to perinatal mortality rates around five percent?",
+      "relevant_doc_ids": ["1606628"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q04",
+      "text": "ADAR1 interaction with Dicer in pre-miRNA processing",
+      "relevant_doc_ids": ["5953485"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q05",
+      "text": "AIRE expression in cutaneous neoplasms",
+      "relevant_doc_ids": ["12580014"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q06",
+      "text": "ALDH1 as a marker for improved breast cancer survival",
+      "relevant_doc_ids": ["45638119"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q07",
+      "text": "APOE4 in iPSC neurons alpha-beta and tau phosphorylation GABA degeneration",
+      "relevant_doc_ids": ["4709641"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q08",
+      "text": "PPM1D activation and p53 tumor suppressor pathway",
+      "relevant_doc_ids": ["4414547", "5956380"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q09",
+      "text": "Helicobacter pylori urease structure UreA UreB subunits",
+      "relevant_doc_ids": ["4387784"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q10",
+      "text": "Albendazole treatment for lymphatic filariasis",
+      "relevant_doc_ids": ["1215116"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q11",
+      "text": "Alizarin hydrogen bonding PGAM1 substrate binding site",
+      "relevant_doc_ids": ["18810195"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q12",
+      "text": "Hematopoietic stem cell chromosome segregation randomness",
+      "relevant_doc_ids": ["4381486"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q13",
+      "text": "ACE inhibitors and functional renal insufficiency risk",
+      "relevant_doc_ids": ["6157837"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q14",
+      "text": "Microerythrocyte count and severe anemia in alpha-thalassemia trait",
+      "relevant_doc_ids": ["18174210"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q15",
+      "text": "Asymptomatic vCJD carrier prevalence United Kingdom one thousand individuals",
+      "relevant_doc_ids": ["13734012"],
+      "hard": false,
+      "category": "standard"
+    },
+    {
+      "id": "q16",
+      "text": "Zero-dimensional scaffold materials promote tissue induction.",
+      "relevant_doc_ids": ["31715818"],
+      "hard": true,
+      "category": "paraphrase",
+      "notes": "Paraphrase of biomaterials inductive-properties claim; wording differs from abstract."
+    },
+    {
+      "id": "q17",
+      "text": "B12 vitamin shortage raises homocysteine concentrations in blood.",
+      "relevant_doc_ids": ["5152028", "11705328"],
+      "hard": true,
+      "category": "paraphrase_multi_doc",
+      "notes": "Paraphrased mechanism query with two acceptable evidence documents."
+    },
+    {
+      "id": "q18",
+      "text": "Turning on AMPK makes lung inflammation fibrosis worse.",
+      "relevant_doc_ids": ["49556906"],
+      "hard": true,
+      "category": "rare_terms",
+      "notes": "Colloquial phrasing; rare pathway vocabulary."
+    },
+    {
+      "id": "q19",
+      "text": "ALDH1 is linked to worse breast cancer prognosis.",
+      "relevant_doc_ids": ["45638119"],
+      "hard": true,
+      "category": "ambiguous",
+      "notes": "Same target doc as q06 but opposite prognosis direction—tests claim-sensitive retrieval."
+    },
+    {
+      "id": "q20",
+      "text": "Women's heart failure rates fell ten percent since the late 1970s.",
+      "relevant_doc_ids": ["6561200"],
+      "hard": true,
+      "category": "numeric_paraphrase",
+      "notes": "Paraphrased epidemiology claim; easy to retrieve topically similar but wrong papers."
+    }
+  ]
+}
